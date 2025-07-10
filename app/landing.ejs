@@ -2,7 +2,7 @@
     <div id="upper">
         <div id="left">
             <div id="image_seal_container">
-                <img id="image_seal" src="assets/images/SealCircle.png"/>
+                <img id="image_seal" src="assets/images/icon.png"/>
                 <div id="updateAvailableTooltip"><%- lang('landing.updateAvailableTooltip') %></div>
             </div>
         </div>
@@ -27,8 +27,18 @@
                             </button>
                         </div>
                     </div>
-                    <div class="mediaDivider"></div>
-                    <div id="externalMedia">
+                    <div id="internalMedia">
+                        <div class="mediaContainer" id="screenshotsMediaContainer">
+                            <button class="mediaButton" id="screenshotsMediaButton">
+                                <svg id="screenshotsSVG" class="mediaSVG" viewBox="0 0 600 533">
+                                    <path d="M160 32c-35.3 0-64 28.7-64 64V320c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H160zM396 138.7l96 144c4.9 7.4 5.4 16.8 1.2 24.6S480.9 320 472 320H328 280 200c-9.2 0-17.6-5.3-21.6-13.6s-2.9-18.2 2.9-25.4l64-80c4.6-5.7 11.4-9 18.7-9s14.2 3.3 18.7 9l17.3 21.6 56-84C360.5 132 368 128 376 128s15.5 4 20 10.7zM192 128a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zM48 120c0-13.3-10.7-24-24-24S0 106.7 0 120V344c0 75.1 60.9 136 136 136H456c13.3 0 24-10.7 24-24s-10.7-24-24-24H136c-48.6 0-88-39.4-88-88V120z" id="svg_3" class=""/>
+                                </svg>
+                                <div id="screenshotsTooltip"><%- lang('landing.screenshotsTooltip') %></div>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="mediaDivider" style="display: none;"></div>
+                    <div id="externalMedia" style="display: none;">
                         <div class="mediaContainer">
                             <a href="<%- lang('landing.mediaGitHubURL') %>" class="mediaURL" id="linkURL">
                                 <svg id="linkSVG" class="mediaSVG" viewBox="35.34 34.3575 70.68 68.71500">
@@ -86,6 +96,38 @@
                                 </svg>
                             </a>
                         </div>
+                        <div class="mediaContainer">
+                            <a href="<%- lang('landing.mediaSoopURL') %>" class="mediaURL" id="soopURL">
+                                <svg id="soopSVG" class="mediaSVG" viewBox="0 0 24 24">
+                                <defs>
+                                    <linearGradient id="soopFill" x1="3.795" x2="20.928" y1="5.63" y2="18.955" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#0082FF"/>
+                                        <stop offset=".42" stop-color="#0A96FF"/>
+                                        <stop offset=".56" stop-color="#05BCFF"/>
+                                        <stop offset=".76" stop-color="#00F0FF"/>
+                                        <stop offset=".79" stop-color="#04F0FC"/>
+                                        <stop offset=".82" stop-color="#10F1F5"/>
+                                        <stop offset=".85" stop-color="#24F4E8"/>
+                                        <stop offset=".89" stop-color="#40F7D7"/>
+                                        <stop offset=".92" stop-color="#64FBC1"/>
+                                        <stop offset=".94" stop-color="#82FFB0"/>
+                                    </linearGradient>
+                                </defs>
+                                <g>
+                                    <path d="M16.453 6.188a5.85 5.85 0 0 0-4.367 1.953.114.114 0 0 1-.172 0 5.86 5.86 0 1 0 0 7.812.114.114 0 0 1 .172 0 5.86 5.86 0 1 0 4.368-9.765m0 8.906c-.937 0-1.72-.452-2.201-.962-.153-.163-.343-.386-.552-.576q-.15-.134-.293-.243A2.4 2.4 0 0 0 12 12.867a2.42 2.42 0 0 0-1.407.445 4 4 0 0 0-.293.244c-.21.19-.399.413-.552.576-.48.51-1.263.962-2.201.962l-.071-.002q-.06-.001-.121-.005-.042-.002-.082-.006l-.049-.004a3.047 3.047 0 0 1-2.724-3.03v.013-.026.013a3.05 3.05 0 0 1 2.724-3.03l.051-.005.08-.006.121-.004.07-.002c.938 0 1.721.452 2.202.962.153.163.343.386.551.575q.15.136.294.244c.392.28.878.446 1.406.446s1.014-.166 1.406-.446a5 5 0 0 0 .294-.244c.209-.189.398-.412.551-.575A3.07 3.07 0 0 1 16.453 9l.07.002.122.004.077.006.054.005a3.05 3.05 0 0 1 2.718 2.851l.001.029.003.083v.124q0 .047-.003.094v.02a3.05 3.05 0 0 1-2.719 2.858l-.055.004a4 4 0 0 1-.199.01l-.07.003z"/>
+                                </g>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="mediaContainer">
+                            <a href="<%- lang('landing.mediaChzzkURL') %>" class="mediaURL" id="chzzkURL">
+                                <svg id="chzzkSVG" class="mediaSVG" viewBox="15 15 60 60">
+                                    <g>
+                                        <path d="M 32.179 28.278 L 24.858 38.500 33.757 39.000 L 42.655 39.500 31.377 55.000 L 20.098 70.500 44.049 70.768 L 68.000 71.036 68.000 64.518 L 68.000 58.000 58.000 58.000 C 52.500 58.000 48.019 57.663 48.042 57.250 C 48.065 56.838 52.984 49.750 58.973 41.500 L 69.863 26.500 60.842 26.211 L 51.822 25.923 54.411 22.528 C 55.835 20.661 57.000 18.878 57.000 18.567 C 57.000 18.255 53.063 18.012 48.250 18.028 L 39.500 18.055 32.179 28.278 "/>
+                                    </g>
+                                </svg>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -119,10 +161,17 @@
                         </div>
                     </div>
                 </div>
+                <div id="resolutionSettingsContainer">
+                    <label for="resolutionDropdown">해상도 설정: </label>
+                    <select class="settingsSelectSelected" id="resolutionDropdown">
+                        <option value="1280x720">1280x720</option>
+                        <option value="1920x1080">1920x1080</option>
+                    </select>
+                </div>
             </div>
         </div>
         <div id="center">
-            <div class="bot_wrapper">
+            <div class="bot_wrapper" style="display: none;">
                 <div id="content">
                     <button id="newsButton">
                         <!--<img src="assets/images/icons/arrow.svg" id="newsButtonSVG"/>-->
